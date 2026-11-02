@@ -1,0 +1,2 @@
+## Explainer - Chrome Extension
+This chrome extension can be used in most of the sites to search for the meaning of a selected text (it's meaning appears in a popup window) and you can also do the manual search.

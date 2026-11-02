@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,   
+  "name": "Explainer",
+  "version": "1.0",
+  "description": "Explains things",
+  "action": {
+    "default_popup": "src/mwin.html"
+  },
+
+  "permissions": ["storage"],
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  },
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["config.js", "src/content.js"]
+  }
+  ],
+  "web_accessible_resources": [
+  {
+    "resources": ["assets/images/search.png"],
+    "matches": ["<all_urls>"]
+  }
+]
+}
